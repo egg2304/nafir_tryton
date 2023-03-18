@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<form col="6">
+    <label name="torneo"/>
+    <field name="torneo"/>
+    <newline/>
+    <label name="club"/>
+    <field name="club"/>
+    <newline/>
+</form>

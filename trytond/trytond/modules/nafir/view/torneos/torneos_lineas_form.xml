@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<form col="6">
+    <label name="torneo"/>
+    <field name="torneo"/>
+    <newline/>
+    <label name="club"/>
+    <field name="club"/>
+    <newline/>
+    <label name="categoria"/>
+    <field name="categoria"/>
+    <newline/>
+    <label name="linea"/>
+    <field name="linea"/>
+</form>

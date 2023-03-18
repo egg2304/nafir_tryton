@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<form col="6">
+    <label name="torneo"/>
+    <field name="torneo"/>
+    <newline/>
+    <label name="numero"/>
+    <field name="numero"/>
+    <newline/>
+    <label name="fecha"/>
+    <field name="fecha"/>
+    <newline/>
+    <field name="partidos" colspan="6" mode="tree,form" view_ids="nafir.view_torneos_partidos_tree,nafir.view_torneos_partidos_form"/>
+</form>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<tree>
+    <field name="nombre" expand="2"/>
+    <field name="clubes" />
+    <field name="jugadores"/>
+</tree>

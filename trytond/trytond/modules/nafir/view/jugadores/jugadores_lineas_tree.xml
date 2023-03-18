@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<tree>
+    <field name="jugador"/>
+    <field name="club"/>
+    <field name="categoria" />
+    <field name="linea"/>
+    <field name="fecha_desde"/>
+    <field name="fecha_hasta"/>
+</tree>

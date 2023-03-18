@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<tree>
+    <field name="torneo"/>
+    <field name="numero"/>
+    <field name="fecha"/>
+</tree>

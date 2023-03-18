@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<form col="6">
+    <label name="nombre"/>
+    <field name="nombre"/>
+    <notebook colspan="6">
+        <page string="Clubes" id="tab_clubes">
+            <field name="clubes" colspan="6" mode="tree,form" view_ids="nafir.view_clubes_tree,nafir.view_clubes_form"/>
+        </page>
+        <page string="Jugadores" id="tab_jugadores">
+            <field name="jugadores" colspan="6" mode="tree,form" view_ids="nafir.view_jugadores_tree,nafir.view_jugadores_form"/>
+        </page>
+    </notebook>
+</form>

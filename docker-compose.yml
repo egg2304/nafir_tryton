@@ -1,0 +1,39 @@
+version: "3"
+
+services:
+    tryton:
+        build:
+            context: trytond
+            dockerfile: ../Dockerfile
+        container_name: tryton
+        volumes:
+            - ./trytond:/opt/tryton/trytond
+#            - ./volumes/etc/trytond.conf:/opt/tryton/trytond/etc/trytond.conf
+            - ./volumes/log:/opt/tryton/trytond/log
+        ports:
+            - 8000:8000
+        environment:
+            - TRYTOND_DATABASE__URI=postgresql://postgres:root+123@db:5432
+            - TRYTOND_CACHE__CLASS=trytond.redis_cache.RedisCache
+            - TRYTOND_CACHE__URI=redis://redis:6379/0
+
+#        command: /opt/tryton/trytond/bin/trytond-admin -c /opt/tryton/trytond/trytond.conf -d tryton-prod --all
+
+    db:
+        image: postgres:13
+        container_name: db
+        volumes:
+            - ./volumes/db:/var/lib/postgresql/data
+        ports:
+            - 5432:5432
+        environment:
+          POSTGRES_PASSWORD: root+123
+
+    redis:
+        image: redis
+        container_name: redis
+        volumes:
+            - ./volumes/redis:/data
+        ports:
+            - 6379:6379
+        command: redis-server --appendonly yes

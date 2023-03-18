@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<tree>
+    <field name="ciudad"/>
+    <field name="nombre"/>
+    <field name="cancha"/>
+    <field name="domicilio"/>
+    <field name="telefono"/>
+    <field name="lineas" />
+    <field name="jugadores"/>
+</tree>

@@ -1,0 +1,10 @@
+# Para correr local
+
+python3 -m venv ./venv
+source venv/bin/activate
+pip3 install  -r trytond/requirements.txt --no-cache-dir
+
+python3 trytond/bin/trytond -c trytond.conf
+
+
+# Para correr sobre docker

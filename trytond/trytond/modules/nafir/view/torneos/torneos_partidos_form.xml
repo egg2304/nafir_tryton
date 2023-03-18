@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<form col="6">
+    <label name="fecha"/>
+    <field name="fecha"/>
+    <newline/>
+    <label name="categoria"/>
+    <field name="categoria" widget="selection"/>
+    <newline/>
+    <label name="club_local"/>
+    <field name="club_local" widget="selection"/>
+    <newline/>
+    <label name="club_visitante"/>
+    <field name="club_visitante" widget="selection"/>
+    <newline/>
+    <label name="cancha"/>
+    <field name="cancha"/>
+    <newline/>
+    <label name="hora"/>
+    <field name="hora"/>
+    <newline/>
+</form>

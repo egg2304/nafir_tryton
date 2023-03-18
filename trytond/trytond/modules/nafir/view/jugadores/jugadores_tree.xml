@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<tree>
+    <field name="club" />
+    <field name="categoria" />
+    <field name="carnet"/>
+    <field name="dni"/>
+    <field name="nombre"/>
+    <field name="apellido"/>
+    <field name="ciudad"/>
+    <field name="telefono"/>
+</tree>

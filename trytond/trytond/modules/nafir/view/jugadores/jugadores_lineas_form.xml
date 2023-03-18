@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<form col="6">
+    <label name="jugador"/>
+    <field name="jugador"/>
+    <label name="club"/>
+    <field name="club"/>
+    <label name="categoria"/>
+    <field name="categoria" widget="selection"/>
+    <label name="linea"/>
+    <field name="linea"/>
+    <label name="fecha_desde"/>
+    <field name="fecha_desde"/>
+    <label name="fecha_hasta"/>
+    <field name="fecha_hasta"/>
+</form>
