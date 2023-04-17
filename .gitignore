@@ -54,5 +54,8 @@ venv
 .vscode
 volumes/
 log/
-trytond/sao/
+trytond/sao/bower_components/
+trytond/sao/locale/*.json
+trytond/sao/package-lock.json
+trytond/sao/node_modules/
 .idea/
