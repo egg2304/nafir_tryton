@@ -6,8 +6,5 @@
     <label name="numero"/>
     <field name="numero"/>
     <newline/>
-    <label name="fecha"/>
-    <field name="fecha"/>
-    <newline/>
-    <field name="partidos" colspan="6" mode="tree,form" view_ids="nafir.view_torneos_partidos_tree,nafir.view_torneos_partidos_form"/>
+    <field name="partidos" colspan="6" create="0" delete="0" mode="tree,form" view_ids="nafir.view_torneos_partidos_tree,nafir.view_torneos_partidos_form"/>
 </form>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<form col="6">
+    <label name="categoria"/>
+    <field name="categoria" colspan="5"/>
+    <newline/>
+    <label name="resultado_local"/>
+    <field name="resultado_local"/>
+    <label name="resultado_visitante"/>
+    <field name="resultado_visitante"/>
+</form>

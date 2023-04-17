@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
 <tree>
-    <field name="torneo"/>
-    <field name="club"/>
+    <field name="jugador"/>
     <field name="linea"/>
 </tree>

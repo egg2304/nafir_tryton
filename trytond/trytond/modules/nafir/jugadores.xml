@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<tryton>
+    <data>
+        <!--jugadores -->
+        <record model="ir.ui.view" id="view_jugadores_form">
+            <field name="model">nafir.jugadores</field>
+            <field name="type">form</field>
+            <field name="name">jugadores/jugadores_form</field>
+        </record>
+        <record model="ir.ui.view" id="view_jugadores_tree">
+            <field name="model">nafir.jugadores</field>
+            <field name="type">tree</field>
+            <field name="name">jugadores/jugadores_tree</field>
+        </record>
+        <record model="ir.ui.view" id="view_jugadores_lineas_form">
+            <field name="model">nafir.jugadores.lineas</field>
+            <field name="type">form</field>
+            <field name="name">jugadores/jugadores_lineas_form</field>
+        </record>
+        <record model="ir.ui.view" id="view_jugadores_lineas_tree">
+            <field name="model">nafir.jugadores.lineas</field>
+            <field name="type">tree</field>
+            <field name="name">jugadores/jugadores_lineas_tree</field>
+        </record>
+        <record model="ir.ui.view" id="view_jugadores_lineas_reducida_tree">
+            <field name="model">nafir.jugadores.lineas</field>
+            <field name="type">tree</field>
+            <field name="name">jugadores/jugadores_lineas_reducida_tree</field>
+        </record>
+        <record model="ir.ui.view" id="view_jugadores_tipo_torneo_form">
+            <field name="model">nafir.jugadores.tipo_torneo</field>
+            <field name="type">form</field>
+            <field name="name">jugadores/jugadores_tipo_torneo_form</field>
+        </record>
+        <record model="ir.ui.view" id="view_jugadores_tipo_torneo_tree">
+            <field name="model">nafir.jugadores.tipo_torneo</field>
+            <field name="type">tree</field>
+            <field name="name">jugadores/jugadores_tipo_torneo_tree</field>
+        </record>
+        <record model="ir.action.act_window" id="act_window_jugadores_form">
+            <field name="name">Jugadores</field>
+            <field name="res_model">nafir.jugadores</field>
+        </record>
+        <record model="ir.action.act_window.view" id="act_window_jugadores_tree_view">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="view_jugadores_tree"/>
+            <field name="act_window" ref="act_window_jugadores_form"/>
+        </record>
+        <record model="ir.action.act_window.view" id="act_window_jugadores_form_view">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="view_jugadores_form"/>
+            <field name="act_window" ref="act_window_jugadores_form"/>
+        </record>
+        <menuitem action="act_window_jugadores_form" id="menu_act_window_jugadores_form1" sequence="40"/>
+
+        <record model="ir.action.wizard" id="act_agregar_fichaje">
+                <field name="name">Agregar Fichaje</field>
+                <field name="wiz_name">nafir.agregar_fichaje</field>
+        </record>
+        <record model="ir.ui.view" id="agregar_fichaje_start_view_form">
+            <field name="model">nafir.agregar_fichaje.start</field>
+            <field name="type">form</field>
+            <field name="name">jugadores/agregar_fichaje_start_form</field>
+        </record>
+
+    </data>
+</tryton>

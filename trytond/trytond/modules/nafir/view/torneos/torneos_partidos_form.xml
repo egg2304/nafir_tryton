@@ -2,20 +2,17 @@
 <form col="6">
     <label name="fecha"/>
     <field name="fecha"/>
-    <newline/>
-    <label name="categoria"/>
-    <field name="categoria" widget="selection"/>
-    <newline/>
-    <label name="club_local"/>
-    <field name="club_local" widget="selection"/>
-    <newline/>
-    <label name="club_visitante"/>
-    <field name="club_visitante" widget="selection"/>
+    <label name="club_linea_local"/>
+    <field name="club_linea_local"/>
+    <label name="club_linea_visitante"/>
+    <field name="club_linea_visitante"/>
     <newline/>
     <label name="cancha"/>
     <field name="cancha"/>
-    <newline/>
     <label name="hora"/>
     <field name="hora"/>
+    <label name="es_libre"/>
+    <field name="es_libre"/>
     <newline/>
+    <field name="categorias" colspan="6" mode="tree,form" view_ids="nafir.view_torneos_partidos_categorias_tree,nafir.view_torneos_partidos_categorias_form" create="0" delete="0"/>
 </form>

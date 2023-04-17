@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<form col="6">
+    <label name="nombre"/>
+    <field name="nombre"/>
+    <label name="solicitar_categoria"/>
+    <field name="solicitar_categoria"/>
+    <notebook colspan="6">
+        <page string="Torneos" id="tab_torneos">
+            <field name="torneos" colspan="6" mode="tree" view_ids="nafir.view_torneos_tree"/>
+        </page>
+    </notebook>
+</form>

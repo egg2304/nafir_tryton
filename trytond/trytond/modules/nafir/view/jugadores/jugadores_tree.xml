@@ -2,7 +2,7 @@
 <tree>
     <field name="club" />
     <field name="categoria" />
-    <field name="carnet"/>
+    <field name="numero_carnet"/>
     <field name="dni"/>
     <field name="nombre"/>
     <field name="apellido"/>

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<form col="6">
+    <label name="jugador"/>
+    <field name="jugador"/>
+    <newline/>
+    <label name="tipo_torneo"/>
+    <field name="tipo_torneo"/>
+</form>

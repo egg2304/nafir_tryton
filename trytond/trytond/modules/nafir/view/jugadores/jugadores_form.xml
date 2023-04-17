@@ -1,47 +1,54 @@
 <?xml version="1.0"?>
 <form col="6">
-    <label name="nombre"/>
-    <field name="nombre"/>
-    <label name="apellido"/>
-    <field name="apellido"/>
-    <newline/>
-    <label name="club"/>
-    <field name="club"/>
-    <label name="categoria"/>
-    <field name="categoria"/>
-    <notebook colspan="6">
-        <page string="Datos" id="tab_datos">
-            <label name="carnet"/>
-            <field name="carnet"/>
-            <label name="dni"/>
-            <field name="dni"/>
-            <label name="fecha_nacimiento"/>
-            <field name="fecha_nacimiento"/>
-            <newline/>
-            <label name="domicilio"/>
-            <field name="domicilio"/>
-            <label name="ciudad"/>
-            <field name="ciudad" widget="selection"/>
-            <label name="fecha_inscripcion"/>
-            <field name="fecha_inscripcion"/>
-            <newline/>
-            <label name="telefono"/>
-            <field name="telefono"/>
+    <group id="g1" col="2" colspan="2">
+        <label name="nombre"/>
+        <field name="nombre"/>
+        <label name="apellido"/>
+        <field name="apellido"/>
+        <label name="club"/>
+        <field name="club"/>
+        <label name="categoria"/>
+        <field name="categoria"/>
+        <label name="numero_carnet"/>
+        <field name="numero_carnet"  xexpand="0" width="20"/>
+        <label name="fecha_inscripcion"/>
+        <field name="fecha_inscripcion"/>
+        <label name="dni"/>
+        <field name="dni"/>
+        <label name="fecha_nacimiento"/>
+        <field name="fecha_nacimiento"/>
+        <label name="domicilio"/>
+        <field name="domicilio"/>
+        <label name="ciudad"/>
+        <field name="ciudad" widget="selection"/>
+        <label name="telefono"/>
+        <field name="telefono"/>
+        <group id="g1" col="4" colspan="2">
             <label name="grupo_sanguineo"/>
             <field name="grupo_sanguineo"/>
             <label name="factor"/>
             <field name="factor"/>
-            <newline/>
-            <label name="nombre_padre"/>
-            <field name="nombre_padre"/>
-            <label name="nombre_madre"/>
-            <field name="nombre_madre"/>
-            <newline/>
-            <label name="observaciones"/>
-            <field name="observaciones" colspan="5"/>
-        </page>
-        <page string="Lineas" id="tab_lineas">
-            <field name="lineas" colspan="6" mode="tree,form" view_ids="nafir.view_jugadores_lineas_tree,nafir.view_jugadores_lineas_form"/>
-        </page>
-    </notebook>
+        </group>
+    </group>
+    <group id="g2" col="2" colspan="4">
+        <label name="foto"/>
+        <field name="foto" widget="image"/>
+    <newline/>
+        <field name="tipos_torneos" colspan="6" mode="tree,form" view_ids="nafir.view_jugadores_tipo_torneo_tree,nafir.view_jugadores_tipo_torneo_form"/>
+    </group>
+    <newline/>
+    <label name="nombre_padre"/>
+    <field name="nombre_padre"/>
+    <label name="nombre_madre"/>
+    <field name="nombre_madre"/>
+    <group col="-1" colspan="2" id="buttons2">
+        <button name="agregar_fichaje" icon="tryton-foward" string="Agregar Fichaje"/>
+    </group>
+    <newline/>
+    <field name="lineas" colspan="6" mode="tree,form" view_ids="nafir.view_jugadores_lineas_tree,nafir.view_jugadores_lineas_form"/>
+    <label name="observaciones"/>
+    <field name="observaciones" colspan="5"/>
+    <button name="obtener_qr" icon="tryton-foward" string="Generar QR"/>
+    <label name="qr_image"/>
+    <field name="qr_image" widget="image"/>
 </form>

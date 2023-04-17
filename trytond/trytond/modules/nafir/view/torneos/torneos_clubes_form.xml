@@ -6,4 +6,6 @@
     <label name="club"/>
     <field name="club"/>
     <newline/>
+    <field name="partidos_locales" colspan="3" create="0" delete="0" mode="tree,form" view_ids="nafir.view_torneos_partidos_tree,nafir.view_torneos_partidos_form"/>
+    <field name="partidos_visitantes" colspan="3" create="0" delete="0" mode="tree,form" view_ids="nafir.view_torneos_partidos_tree,nafir.view_torneos_partidos_form"/>
 </form>

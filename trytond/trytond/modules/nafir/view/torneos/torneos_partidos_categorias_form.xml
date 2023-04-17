@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<form col="6">
+    <label name="partido"/>
+    <field name="partido"/>
+    <newline/>
+    <label name="categoria"/>
+    <field name="categoria"/>
+    <label name="club_local"/>
+    <field name="club_local"/>
+    <label name="club_visitante"/>
+    <field name="club_visitante"/>
+    <field name="hoy"/>
+    <field name="tipo_torneo"/>
+    <newline/>
+    <label name="resultado_local"/>
+    <field name="resultado_local"/>
+    <label name="resultado_visitante"/>
+    <field name="resultado_visitante"/>
+    <newline/>
+    <field name="jugadores_locales" colspan="3" view_ids="nafir.view_jugadores_lineas_reducida_tree"/>
+    <field name="jugadores_visitantes" colspan="3" view_ids="nafir.view_jugadores_lineas_reducida_tree"/>
+</form>

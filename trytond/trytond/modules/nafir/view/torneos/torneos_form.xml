@@ -1,9 +1,18 @@
 <?xml version="1.0"?>
 <form col="6">
-    <label name="nombre"/>
-    <field name="nombre"/>
-    <label name="estado"/>
-    <field name="estado"/>
+    <group id="g33" col="6" colspan="6">
+        <label name="nombre"/>
+        <field name="nombre"/>
+        <label name="estado"/>
+        <field name="estado"/>
+        <newline/>
+        <label name="tipo"/>
+        <field name="tipo" widget="selection"/>
+        <label name="categoria_desde"/>
+        <field name="categoria_desde"/>
+        <label name="categoria_hasta"/>
+        <field name="categoria_hasta"/>
+    </group>
     <notebook colspan="6">
         <page string="Datos" id="tab_datos">
             <label name="fecha_inicio"/>
@@ -11,23 +20,21 @@
             <label name="fecha_fin"/>
             <field name="fecha_fin"/>
         </page>
-        <page string="Lineas" id="tab_lineas">
-            <field name="lineas" colspan="6" mode="tree,form" view_ids="nafir.view_torneos_lineas_tree,nafir.view_torneos_lineas_form"/>
-        </page>
         <page string="Clubes" id="tab_clubes">
-            <field name="clubes" colspan="6" mode="tree,form" view_ids="nafir.view_torneos_clubes_tree,nafir.view_torneos_clubes_form"/>
+            <field name="clubes" create="0" delete="0" colspan="6" mode="tree,form" view_ids="nafir.view_torneos_clubes_tree,nafir.view_torneos_clubes_form"/>
         </page>
-        <page string="Categorias" id="tab_categorias">
-            <field name="categorias" colspan="6" mode="tree,form" view_ids="nafir.view_torneos_categorias_tree,nafir.view_torneos_categorias_form"/>
+        <page string="Lineas" id="tab_lineas">
+            <field name="lineas" create="0" delete="0" colspan="6" mode="tree,form" view_ids="nafir.view_torneos_lineas_tree,nafir.view_torneos_lineas_form"/>
         </page>
         <page string="Fechas" id="tab_fechas">
-            <field name="fechas" colspan="6" mode="tree,form" view_ids="nafir.view_torneos_fechas_tree,nafir.view_torneos_fechas_form"/>
+            <field name="fechas" create="0" delete="0" colspan="6" mode="tree,form" view_ids="nafir.view_torneos_fechas_tree,nafir.view_torneos_fechas_form"/>
         </page>
     </notebook>
     <group col="-1" colspan="6" id="buttons">
         <button name="borrador" icon="tryton-foward" string="Pasar a Borrador" confirm="¿Estas seguro que quieres volver a borrador?"/>
-        <button name="agregar_linea" icon="tryton-foward" string="Agregar Linea"/>
+        <button name="agregar_club" icon="tryton-foward" string="Agregar Club"/>
         <button name="iniciar" icon="tryton-foward" string="Iniciar" confirm="¿Estas seguro que quieres iniciar el torneo?"/>
         <button name="finalizar" icon="tryton-foward" string="Finalizar" confirm="¿Estas seguro que quieres finalizar el torneo?"/>
     </group>
+    <field name="solicitar_categoria"/>
 </form>

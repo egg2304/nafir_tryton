@@ -2,8 +2,11 @@
 <tree>
     <field name="jugador"/>
     <field name="club"/>
-    <field name="categoria" />
     <field name="linea"/>
     <field name="fecha_desde"/>
     <field name="fecha_hasta"/>
+    <field name="requiere_libre_deuda"/>
+    <field name="libre_deuda"/>
+    <field name="ultimo_fichaje" tree_invisible="1"/>
+    <button name="renovar" icon="tryton-foward" string="Renovar"/>
 </tree>

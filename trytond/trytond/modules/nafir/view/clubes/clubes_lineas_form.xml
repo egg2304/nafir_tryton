@@ -2,8 +2,6 @@
 <form col="6">
     <label name="club"/>
     <field name="club"/>
-    <label name="categoria"/>
-    <field name="categoria" widget="selection"/>
     <label name="nombre"/>
     <field name="nombre"/>
     <field name="jugadores" colspan="6" mode="tree,form" view_ids="nafir.view_jugadores_lineas_tree,nafir.view_jugadores_lineas_form"/>

@@ -32,16 +32,6 @@
             <field name="type">tree</field>
             <field name="name">torneos/torneos_clubes_tree</field>
         </record>
-        <record model="ir.ui.view" id="view_torneos_categorias_form">
-            <field name="model">nafir.torneos.categorias</field>
-            <field name="type">form</field>
-            <field name="name">torneos/torneos_categorias_form</field>
-        </record>
-        <record model="ir.ui.view" id="view_torneos_categorias_tree">
-            <field name="model">nafir.torneos.categorias</field>
-            <field name="type">tree</field>
-            <field name="name">torneos/torneos_categorias_tree</field>
-        </record>
         <record model="ir.ui.view" id="view_torneos_fechas_form">
             <field name="model">nafir.torneos.fechas</field>
             <field name="type">form</field>
@@ -62,6 +52,16 @@
             <field name="type">tree</field>
             <field name="name">torneos/torneos_partidos_tree</field>
         </record>
+        <record model="ir.ui.view" id="view_torneos_partidos_categorias_form">
+            <field name="model">nafir.torneos.fechas.partidos.categorias</field>
+            <field name="type">form</field>
+            <field name="name">torneos/torneos_partidos_categorias_form</field>
+        </record>
+        <record model="ir.ui.view" id="view_torneos_partidos_categorias_tree">
+            <field name="model">nafir.torneos.fechas.partidos.categorias</field>
+            <field name="type">tree</field>
+            <field name="name">torneos/torneos_partidos_categorias_tree</field>
+        </record>
         <record model="ir.action.act_window" id="act_window_torneos_form">
             <field name="name">Torneos</field>
             <field name="res_model">nafir.torneos</field>
@@ -78,20 +78,23 @@
         </record>
         <menuitem action="act_window_torneos_form" id="menu_act_window_torneos_form1" sequence="60"/>
 
-        <record model="ir.action.wizard" id="act_agregar_linea_wizard">
-                <field name="name">Agregar Linea</field>
-                <field name="wiz_name">nafir.torneos.agregar_linea</field>
+        <record model="ir.action.wizard" id="act_agregar_club_wizard">
+                <field name="name">Agregar Club</field>
+                <field name="wiz_name">nafir.torneos.agregar_club</field>
         </record>
-        <record model="ir.ui.view" id="agregar_linea_start_view_form">
-            <field name="model">nafir.torneos.agregar_linea.start</field>
+        <record model="ir.ui.view" id="agregar_club_start_view_form">
+            <field name="model">nafir.torneos.agregar_club.start</field>
             <field name="type">form</field>
-            <field name="name">torneos/agregar_linea_start_form</field>
+            <field name="name">torneos/agregar_club_start_form</field>
         </record>
-        <record model="ir.ui.view" id="agregar_linea_detalle_view_tree">
-            <field name="model">nafir.torneos.agregar_linea.detalle</field>
-            <field name="type">tree</field>
-            <field name="name">torneos/agregar_linea_detalle_tree</field>
+        <record model="ir.action.wizard" id="act_cargar_resultado_wizard">
+                <field name="name">Cargar Resultado</field>
+                <field name="wiz_name">nafir.torneos.cargar_resultado</field>
         </record>
-
+        <record model="ir.ui.view" id="cargar_resultado_start_view_form">
+            <field name="model">nafir.torneos.cargar_resultado.start</field>
+            <field name="type">form</field>
+            <field name="name">torneos/cargar_resultado_start_form</field>
+        </record>
     </data>
 </tryton>

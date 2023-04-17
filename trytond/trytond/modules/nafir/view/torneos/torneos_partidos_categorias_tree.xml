@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<tree creatable="0">
+    <field name="partido"/>
+    <field name="categoria"/>
+    <field name="jugadores_locales"/>
+    <field name="jugadores_visitantes"/>
+    <field name="resultado_local"/>
+    <field name="resultado_visitante"/>
+    <button name="cargar_resultado" string="Cargar Resultado"/>
+</tree>

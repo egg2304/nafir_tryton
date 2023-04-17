@@ -1,9 +1,8 @@
 <?xml version="1.0"?>
 <tree>
     <field name="fecha"/>
-    <field name="categoria"/>
-    <field name="club_local"/>
-    <field name="club_visitante"/>
+    <field name="club_linea_local"/>
+    <field name="club_linea_visitante"/>
     <field name="cancha"/>
     <field name="hora"/>
 </tree>

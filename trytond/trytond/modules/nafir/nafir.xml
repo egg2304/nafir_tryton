@@ -30,6 +30,33 @@
         </record>
         <menuitem parent="menu_configuracion" action="act_window_ciudades_form" id="menu_act_window_ciudades_form" sequence="10"/>
 
+        <!--tipo_torneo -->
+        <record model="ir.ui.view" id="view_tipo_torneo_form">
+            <field name="model">nafir.tipo_torneo</field>
+            <field name="type">form</field>
+            <field name="name">configuracion/tipo_torneo_form</field>
+        </record>
+        <record model="ir.ui.view" id="view_tipo_torneo_tree">
+            <field name="model">nafir.tipo_torneo</field>
+            <field name="type">tree</field>
+            <field name="name">configuracion/tipo_torneo_tree</field>
+        </record>
+        <record model="ir.action.act_window" id="act_window_tipo_torneo_form">
+            <field name="name">Tipos de Torneo</field>
+            <field name="res_model">nafir.tipo_torneo</field>
+        </record>
+        <record model="ir.action.act_window.view" id="act_window_view_tipo_torneo_tree">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="view_tipo_torneo_tree"/>
+            <field name="act_window" ref="act_window_tipo_torneo_form"/>
+        </record>
+        <record model="ir.action.act_window.view" id="act_window_view_tipo_torneo_form">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="view_tipo_torneo_form"/>
+            <field name="act_window" ref="act_window_tipo_torneo_form"/>
+        </record>
+        <menuitem parent="menu_configuracion" action="act_window_tipo_torneo_form" id="menu_act_window_tipo_torneo_form" sequence="10"/>
+
 
         <!--categorias -->
         <record model="ir.ui.view" id="view_categorias_form">
@@ -96,42 +123,21 @@
         </record>
         <menuitem action="act_window_clubes_form" id="menu_act_window_clubes_form1" sequence="20"/>
 
-
-        <!--jugadores -->
-        <record model="ir.ui.view" id="view_jugadores_form">
-            <field name="model">nafir.jugadores</field>
+       <record model="ir.ui.view" id="configuracion_view_form">
+            <field name="model">nafir.configuracion</field>
             <field name="type">form</field>
-            <field name="name">jugadores/jugadores_form</field>
+            <field name="name">configuracion/configuracion_form</field>
         </record>
-        <record model="ir.ui.view" id="view_jugadores_tree">
-            <field name="model">nafir.jugadores</field>
-            <field name="type">tree</field>
-            <field name="name">jugadores/jugadores_tree</field>
+        <record model="ir.action.act_window" id="act_configuracion_form">
+            <field name="name">Configuracion</field>
+            <field name="res_model">nafir.configuracion</field>
         </record>
-        <record model="ir.ui.view" id="view_jugadores_lineas_form">
-            <field name="model">nafir.jugadores.lineas</field>
-            <field name="type">form</field>
-            <field name="name">jugadores/jugadores_lineas_form</field>
-        </record>
-        <record model="ir.ui.view" id="view_jugadores_lineas_tree">
-            <field name="model">nafir.jugadores.lineas</field>
-            <field name="type">tree</field>
-            <field name="name">jugadores/jugadores_lineas_tree</field>
-        </record>
-        <record model="ir.action.act_window" id="act_window_jugadores_form">
-            <field name="name">Jugadores</field>
-            <field name="res_model">nafir.jugadores</field>
-        </record>
-        <record model="ir.action.act_window.view" id="act_window_jugadores_tree_view">
-            <field name="sequence" eval="10"/>
-            <field name="view" ref="view_jugadores_tree"/>
-            <field name="act_window" ref="act_window_jugadores_form"/>
-        </record>
-        <record model="ir.action.act_window.view" id="act_window_jugadores_form_view">
+        <record model="ir.action.act_window.view" id="act_configuracion_form_view2">
             <field name="sequence" eval="20"/>
-            <field name="view" ref="view_jugadores_form"/>
-            <field name="act_window" ref="act_window_jugadores_form"/>
+            <field name="view" ref="configuracion_view_form"/>
+            <field name="act_window" ref="act_configuracion_form"/>
         </record>
-        <menuitem action="act_window_jugadores_form" id="menu_act_window_jugadores_form1" sequence="40"/>
+        <menuitem parent="menu_configuracion" action="act_configuracion_form" id="menu_configuracion_act"/>
+
     </data>
 </tryton>

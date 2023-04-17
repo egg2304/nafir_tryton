@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<tryton>
+    <data>
+        <record model="ir.action.wizard" id="act_cargar_datos_prueba_wizard">
+                <field name="name">Cargar Datos Prueba</field>
+                <field name="wiz_name">nafir.cargar_datos_prueba</field>
+        </record>
+        <record model="ir.ui.view" id="cargar_datos_prueba_start_view_form">
+            <field name="model">nafir.cargar_datos_prueba.start</field>
+            <field name="type">form</field>
+            <field name="name">configuracion/cargar_datos_prueba_start_form</field>
+        </record>
+        <menuitem parent="menu_configuracion" action="act_cargar_datos_prueba_wizard" id="menu_act_cargar_datos_prueba_wizard" sequence="60"/>
+    </data>
+</tryton>

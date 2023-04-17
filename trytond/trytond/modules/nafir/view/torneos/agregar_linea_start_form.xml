@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-<form col="6">
-    <label name="torneo"/>
-    <field name="torneo"/>
-    <newline/>
-    <field name="detalle" colspan="6" mode="tree" view_ids="nafir.agregar_linea_detalle_view_tree"/>
-</form>

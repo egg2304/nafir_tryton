@@ -2,7 +2,6 @@
 <form col="6">
     <label name="jugador"/>
     <field name="jugador"/>
-    <newline/>
     <label name="club"/>
     <field name="club"/>
     <label name="linea"/>
@@ -15,6 +14,7 @@
     <field name="requiere_libre_deuda"/>
     <label name="libre_deuda"/>
     <field name="libre_deuda"/>
+    <field name="anio_desde" invisible="1"/>
     <newline/>
     <label name="mensajes"/>
     <field name="mensajes" colspan="5"/>
