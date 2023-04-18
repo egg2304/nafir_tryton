@@ -8,5 +8,5 @@
     <field name="requiere_libre_deuda"/>
     <field name="libre_deuda"/>
     <field name="ultimo_fichaje" tree_invisible="1"/>
-    <button name="renovar" icon="tryton-foward" string="Renovar"/>
+    <button name="renovar" string="Renovar"/>
 </tree>
